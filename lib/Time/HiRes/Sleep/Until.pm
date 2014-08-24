@@ -5,7 +5,7 @@ use base qw{Package::New};
 use Time::HiRes qw{sleep time};
 use Math::Round qw{nhimult}; 
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 =head1 NAME
 
@@ -35,6 +35,10 @@ We use this package to make measurements at the same time within the minute for 
   do {
     print DateTime->now, "\n"; #make a measurment three times a minute
   } while ($su->mark(20));
+
+Perl One liner
+
+  perl -MTime::HiRes::Sleep::Until -e 'printf "Slept: %s\n", Time::HiRes::Sleep::Until->new->top'
 
 =head1 CONSTRUCTOR
 
@@ -114,7 +118,7 @@ sub top {
 
 =head1 LIMITATIONS
 
-The mathematics adds a small amount of delay for which we do not account.  Testing routinely passes with 100th of a second accuracy and typically with millisecond accuracy.
+The mathematics add a small amount of delay for which we do not account.  Testing routinely passes with 100th of a second accuracy and typically with millisecond accuracy.
 
 =head1 BUGS
 

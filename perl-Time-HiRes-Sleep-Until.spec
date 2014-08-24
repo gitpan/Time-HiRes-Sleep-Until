@@ -1,7 +1,7 @@
 Name:           perl-Time-HiRes-Sleep-Until
-Version:        0.03
+Version:        0.04
 Release:        1%{?dist}
-Summary:        Provides common ways to sleep until
+Summary:        Provides common ways to sleep until...
 License:        GPLv2
 Group:          Development/Libraries
 URL:            http://search.cpan.org/dist/Time-HiRes-Sleep-Until/
@@ -18,9 +18,9 @@ Requires:       perl(Math::Round) >= 0.05
 Requires:       perl(:MODULE_COMPAT_%(eval "`%{__perl} -V:version`"; echo $version))
 
 %description
-These sleep until routines provide wrappers for common sleep functions that
-I typically need. They are simply a wrapper around Time::HiRes and
-Math::Round.
+Sleep Until provides sleep wrappers for common sleep functions that I 
+typically need. These methods are simply wrappers around Time::HiRes 
+and Math::Round.
 
 %prep
 %setup -q -n Time-HiRes-Sleep-Until-%{version}

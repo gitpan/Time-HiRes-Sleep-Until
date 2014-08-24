@@ -16,6 +16,6 @@ __END__
 
 =head1 NAME
 
-Time-HiRes-Sleep-Until-example.pl - Time::HiRes::Sleep::Until example at 20 second mark
+Time-HiRes-Sleep-Until-mark.pl - Time::HiRes::Sleep::Until second mark of the clock
 
 =cut
