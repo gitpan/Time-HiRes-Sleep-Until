@@ -5,7 +5,7 @@ use base qw{Package::New};
 use Time::HiRes qw{sleep time};
 use Math::Round qw{nhimult}; 
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 =head1 NAME
 

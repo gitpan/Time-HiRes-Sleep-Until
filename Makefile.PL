@@ -4,6 +4,7 @@ WriteMakefile(
     VERSION_FROM  => 'lib/Time/HiRes/Sleep/Until.pm',
     AUTHOR        => 'Michael R. Davis (mdavis@stopllc.com)',
     ABSTRACT_FROM => 'lib/Time/HiRes/Sleep/Until.pm',
+    LICENSE       => "gplv2",
     PREREQ_PM     => {
                       'Test::Simple'        => 0.44, #tests
                       'Test::Number::Delta' => 0,    #tests

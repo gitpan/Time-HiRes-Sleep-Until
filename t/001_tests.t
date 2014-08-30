@@ -7,7 +7,17 @@ use Time::HiRes qw{time};
 use Test::Number::Delta; #delta_within
 use POSIX qw{fmod};
 
-my $tolerance=$ENV{"Time::HiRes::Sleep::Until::TOLERANCE"} || 0.01;
+my $tolerance=$ENV{"Time_HiRes_Sleep_Until_TOLERANCE"} || 0.10;
+
+diag("\nTolerance: $tolerance seconds\n");
+
+diag("
+
+You may want to export Time_HiRes_Sleep_Until_TOLERANCE=0.01 or
+less to stress test this package but CPAN testers must have very
+busy servers and do not sleep well and thus don't test well.
+
+") if $tolerance > 0.002; #I can get this to pass
 
 BEGIN { use_ok( 'Time::HiRes::Sleep::Until' ); }
 

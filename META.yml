@@ -1,8 +1,8 @@
 --- #YAML:1.0
 name:                Time-HiRes-Sleep-Until
-version:             0.04
+version:             0.05
 abstract:            Provides common ways to sleep until...
-license:             ~
+license:             gplv2
 author:              
     - Michael R. Davis (mdavis@stopllc.com)
 generated_by:        ExtUtils::MakeMaker version 6.42
