@@ -5,7 +5,7 @@ use base qw{Package::New};
 use Time::HiRes qw{sleep time};
 use Math::Round qw{nhimult}; 
 
-our $VERSION = '0.05';
+our $VERSION = '0.06';
 
 =head1 NAME
 
@@ -21,7 +21,7 @@ Time::HiRes::Sleep::Until - Provides common ways to sleep until...
 
 =head1 DESCRIPTION
 
-Sleep Until provides sleep wrappers for common sleep functions that I typically need.  These methods are simply wrappers around L<Time::HiRes> and L<Math::Round>.
+Sleep Until provides sleep wrappers for sleep functions that I commonly need.  These methods are simply wrappers around L<Time::HiRes> and L<Math::Round>.
 
 We use this package to make measurements at the same time within the minute for integration with RRDtool.
 

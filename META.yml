@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:                Time-HiRes-Sleep-Until
-version:             0.05
+version:             0.06
 abstract:            Provides common ways to sleep until...
 license:             gplv2
 author:              
