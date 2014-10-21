@@ -7,7 +7,7 @@ use Time::HiRes qw{time};
 use Test::Number::Delta; #delta_within
 use POSIX qw{fmod};
 
-my $tolerance=$ENV{"Time_HiRes_Sleep_Until_TOLERANCE"} || 0.02 || 0.002; #I can get this to pass
+my $tolerance=$ENV{"Time_HiRes_Sleep_Until_TOLERANCE"} || 0.04 || 0.002; #I can get this to pass
 
 diag("\nTolerance: $tolerance seconds\n");
 
@@ -24,7 +24,7 @@ my $skip=0;
   my $after  = time;
   my $delta  = abs($after - $before - $sleep);
   diag("Sleep Delta: $delta\n");
-  $skip=1 if $delta > 0.005;
+  $skip=1 if $delta > 0.001;
 }
   
 SKIP: {

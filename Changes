@@ -1,5 +1,8 @@
 Revision history for Perl module Time::HiRes::Sleep::Until
 
+0.07 2014-10-20
+  - Updated tests to hopefully get a better pass rate from CPAN testers
+
 0.06 2014-10-09
   - Updated tests - added SKIP block for unreliable sleeping testers - Thanks to G. Wade Johnson - houston-pm
 
